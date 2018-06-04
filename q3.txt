@@ -1,0 +1,24 @@
+question 3
+
+from threading import *
+import time
+
+def display(num):
+    i=0
+    for n in num:
+        print(n)
+        i=i+1
+        time.sleep(2**i)
+
+
+num = ['audi','ferrari','lamborghini','mercedes','bentley']
+t=Thread(target=display,args=(num,))
+t.start()
+
+output
+
+audi
+ferrari
+lamborghini
+mercedes
+bentley

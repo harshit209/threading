@@ -1,0 +1,16 @@
+question 4
+
+from threading import *
+import time
+
+def display():
+    time.sleep(5)
+    print("I am batman")
+t = Thread(target=display)
+t.start()
+
+output
+
+Enter a number to calculate factorial : 9
+362880
+

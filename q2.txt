@@ -1,0 +1,26 @@
+question 2
+
+from threading import *
+import time
+
+class Num(Thread):
+    def run(self):
+        for i in range(10):
+            print(i+1)
+            time.sleep(1)
+
+t = Num()
+t.start()
+
+output
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
