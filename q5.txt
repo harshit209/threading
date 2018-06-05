@@ -1,0 +1,15 @@
+question 4
+
+from threading import *
+import math
+def fact():
+    fact = int(input("Enter a number to calculate factorial : "))
+    print(math.factorial(fact))
+t= Thread(target=fact)
+t.start()
+
+output
+
+Enter a number to calculate factorial : 9
+362880
+
